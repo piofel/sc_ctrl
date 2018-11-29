@@ -1,0 +1,70 @@
+#VRML V2.0 utf8
+
+DEF Earth Transform {
+  children Shape {
+    appearance Appearance {
+      material Material {
+        diffuseColor 0 1 1
+      }
+    }
+    geometry Sphere {
+      radius 6.371
+    }
+  }
+}
+DEF Chief Transform {
+  translation 10 0 0
+  children Shape {
+    appearance Appearance {
+      material Material {
+        diffuseColor 1 0 0
+      }
+    }
+    geometry Sphere {
+    }
+  }
+}
+DEF Deputy Transform {
+  translation 15 0 0
+  children Shape {
+    appearance Appearance {
+      material Material {
+        diffuseColor 0 1 0
+      }
+    }
+    geometry Sphere {
+    }
+  }
+}
+DEF View Viewpoint {
+  description "View"
+  position 0 0 60
+  orientation 0 -1 0 0
+}
+Background {
+  skyColor 1 1 1
+}
+DEF ChiefInitPos Transform {
+  translation 20 0 0
+  children Shape {
+    appearance Appearance {
+      material Material {
+        diffuseColor 0.4 0 0
+      }
+    }
+    geometry Sphere {
+    }
+  }
+}
+DEF DeputyInitPos Transform {
+  translation 25 0 0
+  children Shape {
+    appearance Appearance {
+      material Material {
+        diffuseColor 0 0.2 0
+      }
+    }
+    geometry Sphere {
+    }
+  }
+}
